@@ -1,0 +1,147 @@
+/* Задание 1 Flex */
+body {
+  font-size: 20px;
+}
+
+/* 
+  2 * 15 - это размер, 
+  который box-sizing: border-box 
+  отнял у width и height
+
+  ширина container 480  - (2 * 15)
+  или 3 раза по 160 - (2 * 15)  
+*/
+.container {
+  width: 480px;
+  margin: auto;
+  padding: 15px;
+  background: burlywood;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  width: 130px;
+  min-height: 75px;
+  background-color: teal;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Задание 2 Flex: justify-content */
+body {
+  font-size: 20px;
+}
+
+/* 
+  ширина container 480 
+  или 3 раза по 160   
+*/
+.container {
+  width: 480px;
+  margin: auto;
+  padding: 15px 0;
+  background: burlywood;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  width: 130px;
+  min-height: 75px;
+  background-color: teal;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Задание 3 Flex Перенос потомков на новую строку */
+body {
+  font-size: 20px;
+}
+
+.container {
+  width: 480px;
+  margin: auto;
+  padding: 15px 15px 0;
+  background: burlywood;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 130px;
+  min-height: 75px;
+  background-color: teal;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Задание 4 Flex Вложение контейнера flex внутри другого контейнера flex */
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 480px;
+  margin: auto;
+  padding: 15px;
+  background: burlywood;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-menu_link {
+  margin: 0 15px;
+}
+
+/* Задание 5 Flex Изменение положения одного элемента вопреки значению justify-content */
+body {
+  font-size: 20px;
+}
+
+/* 
+  ширина container 480 
+  или 3 раза по 160   
+*/
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 15px 0;
+  background: burlywood;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box {
+  width: 130px;
+  min-height: 75px;
+  background-color: teal;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.box-left {
+  margin-right: auto;
+}
